@@ -12,4 +12,6 @@
 #  index_tokens_on_word  (word)
 #
 class Token < ApplicationRecord
+  has_many :emails_tokens, class_name: '::EmailsTokens'
+  has_many :emails, through: :emails_tokens
 end

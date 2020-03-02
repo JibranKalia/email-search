@@ -8,4 +8,8 @@
 #  updated_at :datetime         not null
 #
 class Email < ApplicationRecord
+
+  def full_text
+    Mail.read(path).decoded
+  end
 end
