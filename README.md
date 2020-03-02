@@ -20,16 +20,17 @@ Set up rails via:
   bundle exec rails db:create
   bundle exec rails db:migrate
 
-  # Start server
-  bundle exec rails s -p 3000
 
   # Set the env to correct corpus location. For example:
   PATH_TO_CORPUS=/Users/jibrankalia/Downloads/smalldir
 
-  # Load the corpus into Postgres
+  # Load the corpus into Postgres. This will take a while. I recommend running with a smaller corpus first.
   bundle exec rake load_corpus_data:run
 
-  # Search the database
-  
+  # Start server
+  bundle exec rails s -p 3000
+
+  # When the database is ready you can search: 
+  curl --request GET 'http://localhost:3000/app
   
 ```
