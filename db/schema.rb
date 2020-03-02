@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2020_03_02_222200) do
   end
 
   create_table "tokens", force: :cascade do |t|
-    t.string "word"
+    t.string "word", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["word"], name: "index_tokens_on_word"

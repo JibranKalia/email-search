@@ -3,7 +3,7 @@
 # Table name: tokens
 #
 #  id         :bigint           not null, primary key
-#  word       :string
+#  word       :string           not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
