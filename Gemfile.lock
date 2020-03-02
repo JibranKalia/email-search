@@ -66,6 +66,10 @@ GEM
     coderay (1.1.2)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
+    dotenv (2.7.5)
+    dotenv-rails (2.7.5)
+      dotenv (= 2.7.5)
+      railties (>= 3.2, < 6.1)
     erubi (1.9.0)
     ffi (1.12.2)
     globalid (0.4.2)
@@ -93,6 +97,8 @@ GEM
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     pg (1.2.2)
+    pragmatic_tokenizer (3.0.7)
+      unicode
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -154,6 +160,7 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.6)
       thread_safe (~> 0.1)
+    unicode (0.4.4.4)
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
@@ -166,8 +173,11 @@ DEPENDENCIES
   annotate
   bootsnap (>= 1.4.2)
   byebug
+  dotenv-rails
   listen (>= 3.0.5, < 3.2)
+  mail
   pg (>= 0.18, < 2.0)
+  pragmatic_tokenizer
   pry (~> 0.12.2)
   pry-byebug
   pry-rails
