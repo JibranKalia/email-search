@@ -21,7 +21,7 @@ Set up rails via:
   bundle exec rails db:migrate
 
 
-  # Set the env to correct corpus location. For example:
+  # Set the correct corpus location in env file. For example:
   PATH_TO_CORPUS=/Users/jibrankalia/Downloads/smalldir
 
   # Load the corpus into Postgres. This will take a while. I recommend running with a smaller corpus first.
