@@ -1,24 +1,35 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Set up rails via:
+```
+  # Clone Repo
+  git clone https://github.com/JibranKalia/email-search
+  cd email-search
 
-Things you may want to cover:
+  # Get Ruby 2.7 via RVM
+  curl -sSL https://get.rvm.io | bash -s stable --ruby
+  rvm install ruby-2.7.0
+  rvm use ruby-2.7.0
 
-* Ruby version
+  # Get and start postgres via Homebrew
+  brew install postgresql
+  brew services start postgresql
 
-* System dependencies
+  # Install gems
+  bundle install
+  bundle exec rails db:create
+  bundle exec rails db:migrate
 
-* Configuration
+  # Start server
+  bundle exec rails s -p 3000
 
-* Database creation
+  # Set the env to correct corpus location. For example:
+  PATH_TO_CORPUS=/Users/jibrankalia/Downloads/smalldir
 
-* Database initialization
+  # Load the corpus into Postgres
+  bundle exec rake load_corpus_data:run
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  # Search the database
+  
+  
+```

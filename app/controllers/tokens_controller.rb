@@ -1,4 +1,5 @@
-class SearchController < ApplicationController
+class TokensController < ApplicationController
+
   def search
     search_term = params[:search_term]
 
